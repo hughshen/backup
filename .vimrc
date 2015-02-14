@@ -24,15 +24,18 @@ set guioptions-=T	"取出vim的gui版本的toolbar
 set mouse=a 
 set selection=exclusive
 set selectmode=mouse,key
-" taglist 配置
+" ctrlp 配置
+"let g:ctrlp_regexp = 1
+let g:ctrlp_map = ',,'
+let g:ctrlp_working_path_mode = 'ra'
 "不同时显示多个文件的 tag ，只显示当前文件
-let Tlist_Show_One_File=1
+let Tlist_Show_One_File = 1
 "如果 taglist 窗口时最后一个窗口，则退出vim
-let Tlist_Exit_OnlyWindow=1
+let Tlist_Exit_OnlyWindow = 1
 "把 taglist 窗口放在屏幕的右侧，缺省在左侧
-let Tlist_Use_Right_Window=1
+let Tlist_Use_Right_Window = 1
 "显示 taglist 菜单
-let Tlist_Show_Menu=1
+let Tlist_Show_Menu = 1
 "winmanager 配置
 "定义打开快捷键
 nmap <silent> <F7> :NERDTreeToggle<cr>
