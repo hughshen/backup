@@ -1,7 +1,7 @@
-set encoding=utf8
-"自动设置当前编辑文件所在目录为当前工作路径
-set autochdir
-colorscheme desert
+set encoding=utf-8
+set fileencoding=utf-8
+set autochdir "自动设置当前编辑文件所在目录为当前工作路径
+colorscheme desert "设置配上方案
 set nocompatible "不使用vi默认键盘布局
 set number "显示行号
 set autoindent "自动对齐
@@ -25,3 +25,19 @@ set guioptions-=T "取出vim的gui版本的toolbar
 set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
+
+function! MySys()
+	if has("win16") || has("win32") || has("win64") || has("win95")
+		return "windows"
+	elseif has("unix")
+		return "linux"
+	endif
+endfunction
+
+if MySys() == "windows"
+	source $VIMRUNTIME/mswin.vim
+	source $VIMRUNTIME/delmenu.vim
+	source $VIMRUNTIME/menu.vim
+	behave mswin
+	language message zh_CN.utf-8 "解决consle输出乱码
+endif
