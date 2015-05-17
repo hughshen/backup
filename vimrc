@@ -26,7 +26,7 @@ set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 
-function! MySys()
+function MySys()
 	if has("win16") || has("win32") || has("win64") || has("win95")
 		return "windows"
 	elseif has("unix")
