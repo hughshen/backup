@@ -26,6 +26,9 @@ set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 
+"NERDTree配置
+map <C-n> :NERDTreeToggle<CR>
+
 function MySys()
 	if has("win16") || has("win32") || has("win64") || has("win95")
 		return "windows"
