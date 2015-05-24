@@ -54,8 +54,8 @@ syntax enable "开启语法高亮
 syntax on "允许用指定的语法高亮配色方案代替默认方案
 
 "###快捷键设置
-nmap la ^
-nmap le $
+"nmap la ^
+"nmap le $
 
 "NERDTree配置
 map <C-n> :NERDTreeToggle<CR>
