@@ -218,3 +218,13 @@ snippet frameset
 	<frameset>${1}</frameset>
 snippet center
 	<center>${1}</center>
+snippet mhtml
+	<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+	</head>
+	<body>
+		${2}
+	</body>
+	</html>
