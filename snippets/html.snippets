@@ -109,7 +109,6 @@ snippet body
 	</body>
 snippet head
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
 	</head>${2}
 snippet title
@@ -220,10 +219,10 @@ snippet center
 	<center>${1}</center>
 snippet span 
 	<span>${1}</span>
-snippet mhtml
+snippet html5
+	<!DOCTYPE HTML>
 	<html>
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
 	</head>
 	<body>
