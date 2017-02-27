@@ -40,6 +40,7 @@ set incsearch "查询时非常方便，如要查找book单词，当输入/b时�
 set hlsearch	"高亮显示搜索结果
 "set clipboard+=unnamed "与windows共享剪贴板
 "可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
+"在连接 VPS 的时候，需要设置为 mouse=r 才能使用鼠标进行复制粘贴
 set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
