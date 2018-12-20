@@ -18,7 +18,7 @@ set guioptions-=R
 "禁止显示菜单和工具条
 set guioptions-=m
 set guioptions-=T
-"set laststatus=2 "总是显示状态栏
+set laststatus=2 "总是显示状态栏
 "set ruler "显示光标当前位置
 "set cursorline "高亮显示当前行
 "set cursorcolumn "高亮显示当前列
@@ -26,12 +26,12 @@ set guioptions-=T
 
 "###代码缩进
 "set expandtab "将制表符扩展为空格
-set cindent "c语言格式对齐
-set autoindent "自动对齐
-set smartindent "智能对齐
-set tabstop=4	"tab键为4个空格
-set shiftwidth=4	"换行时行间交错使用4个空格
-set softtabstop=4	"设置（软）制表符宽度为4
+"set cindent "c语言格式对齐
+"set autoindent "自动对齐
+"set smartindent "智能对齐
+"set tabstop=4	"tab键为4个空格
+"set shiftwidth=4	"换行时行间交错使用4个空格
+"set softtabstop=4	"设置（软）制表符宽度为4
 
 "###其他设置
 set nobackup "不要备份文件
@@ -41,14 +41,14 @@ set hlsearch	"高亮显示搜索结果
 "set clipboard+=unnamed "与windows共享剪贴板
 "可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
 "在连接 VPS 的时候，需要设置为 mouse=r 才能使用鼠标进行复制粘贴
-set mouse=a
+set mouse=r
 set selection=exclusive
 set selectmode=mouse,key
 
 "###文件检测
 filetype on "检测文件的类型
 filetype plugin on "载入文件类型插件
-filetype indent on "载入特定文件类型缩进
+"filetype indent on "载入特定文件类型缩进
 
 "###语法高亮
 syntax enable "开启语法高亮
