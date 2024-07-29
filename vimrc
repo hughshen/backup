@@ -1,3 +1,6 @@
+"###默认设置
+set paste
+
 "###编码设置
 set encoding=utf-8
 set fileencoding=utf-8
